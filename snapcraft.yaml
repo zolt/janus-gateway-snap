@@ -1,4 +1,4 @@
-name: janus-gateway
+name: janus-gateway-aarch64
 base: core18
 summary: Janus WebRTC Server
 adopt-info: janus
@@ -9,8 +9,7 @@ grade: devel
 confinement: strict
 architectures:
   - build-on: amd64
-  - build-on: i386
-  - build-on: armhf
+  - build-on: arm64
 layout:
   /opt/janus/lib/janus:
     bind: $SNAP/opt/janus/lib/janus
